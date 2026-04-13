@@ -31,8 +31,14 @@ Doe dit **pas als DNS bij je registrar klaarstaat** (anders lijkt de site “kap
 
 ## Inhoud aanpassen
 
-- Teksten en structuur: `index.html`
-- Lampen + bijschriften: `data/lampen.json` en afbeeldingen in `images/lampen/`
-- Styling: `css/style.css`
+| Pagina | Bestand |
+| --- | --- |
+| Home | `index.html` |
+| Over | `over.html` |
+| Lampen (galerij) | `lampen.html` + `data/lampen.json` + `images/lampen/` |
+| Ophalen | `ophalen.html` |
+| Contact | `contact.html` |
+| Privacy / cookies / voorwaarden | `privacy.html`, `cookies.html`, `voorwaarden.html` |
+| Styling (alle pagina’s) | `css/style.css` |
 
 Alles is statisch; er is geen server of database nodig.
