@@ -1,48 +1,57 @@
 (function () {
-  var grid = document.getElementById("lampen-grid");
-  var empty = document.getElementById("lampen-empty");
-  if (!grid) return;
+  var gallery = document.getElementById("gallery");
+  var empty = document.getElementById("empty");
+  if (!gallery) return;
 
-  var root = (grid.getAttribute("data-lampen-root") || ".").replace(/\/$/, "");
-  var prefix = root === "." ? "" : root + "/";
-
-  function showEmpty() {
-    if (empty) empty.hidden = false;
-  }
-
-  fetch(prefix + "data/lampen.json")
+  fetch("data/lampen.json")
     .then(function (r) {
-      if (!r.ok) throw new Error("json");
+      if (!r.ok) throw new Error("not found");
       return r.json();
     })
     .then(function (data) {
       var items = Array.isArray(data) ? data : data.lampen || [];
       if (!items.length) {
-        showEmpty();
+        if (empty) empty.hidden = false;
         return;
       }
       items.forEach(function (item) {
         if (!item || !item.image) return;
-        var article = document.createElement("article");
-        article.className = "lamp-card";
-        var figure = document.createElement("figure");
-        figure.style.margin = "0";
+
+        var card = document.createElement("article");
+        card.className = "card";
+
         var img = document.createElement("img");
-        img.src = prefix + item.image.replace(/^\//, "");
+        img.src = item.image;
         img.alt = item.alt || item.title || "";
         img.loading = "lazy";
-        figure.appendChild(img);
-        if (item.title || item.caption) {
-          var cap = document.createElement("figcaption");
-          cap.textContent = item.caption || item.title || "";
-          figure.appendChild(cap);
+
+        var body = document.createElement("div");
+        body.className = "card__body";
+
+        if (item.title) {
+          var title = document.createElement("h3");
+          title.className = "card__title";
+          title.textContent = item.title;
+          body.appendChild(title);
         }
-        article.appendChild(figure);
-        grid.appendChild(article);
+
+        if (item.caption) {
+          var caption = document.createElement("p");
+          caption.className = "card__text";
+          caption.textContent = item.caption;
+          body.appendChild(caption);
+        }
+
+        card.appendChild(img);
+        card.appendChild(body);
+        gallery.appendChild(card);
       });
-      if (!grid.children.length) showEmpty();
+
+      if (!gallery.children.length && empty) {
+        empty.hidden = false;
+      }
     })
     .catch(function () {
-      showEmpty();
+      if (empty) empty.hidden = false;
     });
 })();
