@@ -3,24 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lampen — Klijnhoutenlampen | houten lampen uit voorraad &amp; op maat</title>
-  <meta name="description" content="Overzicht van handgemaakte houten lampen. Beschikbaarheid en prijs stem ik met je af; ophalen in Oosterbeek.">
-  <link rel="canonical" href="https://klijnhoutenlampen.nl/lampen.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,450;9..144,600&display=swap" rel="stylesheet">
+  <title>Lampen — Klijnhoutenlampen</title>
+  <meta name="description" content="Overzicht van handgemaakte houten lampen. Ophalen in Oosterbeek.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#inhoud">Naar inhoud</a>
+  <a class="skip-link" href="#main">Naar inhoud</a>
 
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html">
-        <p class="brand-name">Klijnhoutenlampen</p>
-        <p class="brand-tag">Houten lampen · Oosterbeek</p>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <p class="logo__name">Klijnhoutenlampen</p>
+        <p class="logo__sub">Oosterbeek</p>
       </a>
-      <nav class="site-nav" aria-label="Hoofdmenu">
+      <nav class="nav" aria-label="Hoofdmenu">
         <a href="index.html">Home</a>
         <a href="over.html">Over</a>
         <a href="lampen.html" aria-current="page">Lampen</a>
@@ -30,47 +26,41 @@
     </div>
   </header>
 
-  <main id="inhoud">
-    <div class="wrap">
-      <h1 class="page-title">Lampen</h1>
-      <p class="page-intro">
-        Hieronder staan lampen die beschikbaar zijn of recent gemaakt zijn.
-        Staat jouw voorkeur er niet tussen? Mail gerust — op maat denken we samen na.
-      </p>
-    </div>
+  <main id="main" class="page">
+    <div class="container">
+      <h1 class="page__title">Lampen</h1>
+      <p class="page__intro">Hieronder staan lampen die beschikbaar zijn of recent gemaakt zijn. Staat jouw voorkeur er niet tussen? Mail gerust.</p>
 
-    <section class="gallery-section wrap" aria-labelledby="werk-title">
-      <h2 id="werk-title" class="visually-hidden">Galerij</h2>
-      <div id="lampen-grid" class="lampen-grid lampen-grid--wide" data-lampen-root="."></div>
-      <p id="lampen-empty" class="empty-state" hidden>
-        Er staan nog geen lampen online. Stuur een mail als je wilt weten wat er speelt of wat er mogelijk is — of kom langs op afspraak in Oosterbeek.
-      </p>
-      <p class="section-intro" style="margin-top:1.5rem">
-        <a class="button button--primary" href="mailto:hallo@klijnhoutenlampen.nl">Vraag naar lampen</a>
-        <a class="button button--ghost" href="ophalen.html">Alleen ophalen — hoe werkt dat?</a>
-      </p>
-    </section>
+      <div id="gallery" class="gallery"></div>
+      <p id="empty" class="empty" hidden>Er staan nog geen lampen online. Neem contact op als je wilt weten wat er mogelijk is.</p>
+
+      <div style="margin-top: 32px;">
+        <a class="btn btn--dark" href="mailto:hallo@klijnhoutenlampen.nl">Vraag naar lampen</a>
+        <a class="btn" href="ophalen.html">Hoe ophalen werkt</a>
+      </div>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div class="footer-col">
-        <p><strong>Klijnhoutenlampen</strong></p>
-        <p>Handgemaakte houten lampen — alleen ophalen op afspraak.</p>
-        <p>Lebretweg 72<br>6861 ZZ Oosterbeek</p>
-        <p><a href="https://www.openstreetmap.org/search?query=Lebretweg%2072%2C%206861%20ZZ%20Oosterbeek">Route in OpenStreetMap</a></p>
-      </div>
-      <div class="footer-col">
-        <p><strong>Juridisch</strong></p>
-        <div class="footer-links">
-          <a href="privacy.html">Privacy</a>
-          <a href="cookies.html">Cookies</a>
-          <a href="voorwaarden.html">Voorwaarden</a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <strong>Klijnhoutenlampen</strong>
+          <p>Handgemaakte houten lampen — alleen ophalen op afspraak.</p>
+          <p>Lebretweg 72, 6861 ZZ Oosterbeek</p>
+        </div>
+        <div class="footer__col">
+          <strong>Pagina's</strong>
+          <div class="footer__links">
+            <a href="privacy.html">Privacy</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="voorwaarden.html">Voorwaarden</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="wrap footer-meta">
-      <p>© Klijnhout — klijnhoutenlampen.nl</p>
+      <div class="footer__bottom">
+        <p>© Klijnhout</p>
+      </div>
     </div>
   </footer>
 
