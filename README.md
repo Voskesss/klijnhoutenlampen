@@ -42,3 +42,5 @@ Doe dit **pas als DNS bij je registrar klaarstaat** (anders lijkt de site “kap
 | Styling (alle pagina’s) | `css/style.css` |
 
 Alles is statisch; er is geen server of database nodig.
+
+Vormgeving volgt o.a. ideeën uit [taste-skill](https://github.com/Leonxlnx/taste-skill) (typografie, één accentkleur, rustige beweging, geen standaard-“feature cards”-rooster).
