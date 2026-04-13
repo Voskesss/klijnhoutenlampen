@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "image": "images/lampen/lookbook-01.jpg",
+    "title": "Vloerlamp met tak en witte kap",
+    "caption": "Studio, woonkamer met uitzicht en slaapkamer — dezelfde lamp, drie sferen.",
+    "alt": "Collage: vloerlamp van een gebogen houten tak met wit voetstuk en lampenkap in neutrale studio, moderne woonkamer en slaapkamer"
+  },
+  {
+    "image": "images/lampen/lookbook-02.jpg",
+    "title": "Vloerlamp — lookbook",
+    "caption": "Warm licht in woon- en slaapkamer; plus strak productbeeld op wit.",
+    "alt": "Collage: dezelfde vloerlamp in twee interieurs met sfeerverlichting en een losse productfoto op witte achtergrond"
+  }
+]

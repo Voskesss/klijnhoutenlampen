@@ -211,6 +211,34 @@ main {
   margin-top: 0.25rem;
 }
 
+.hero-showcase {
+  margin-top: 2.25rem;
+}
+
+.hero-showcase figure {
+  margin: 0;
+}
+
+.hero-showcase img {
+  width: 100%;
+  max-width: 36rem;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  box-shadow: 0 12px 40px rgba(42, 36, 28, 0.08);
+}
+
+.hero-showcase figcaption {
+  max-width: 36rem;
+  margin: 0.65rem auto 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.45;
+  text-align: center;
+}
+
 /* ——— Trust-balk ——— */
 .trust-bar {
   margin-top: 2.5rem;
